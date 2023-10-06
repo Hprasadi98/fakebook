@@ -21,7 +21,7 @@ export default function AddPost() {
         <div className="addPostBottom">
           <div className="addPostOptions">
             <div className="addPostOption">
-              <InsertPhotoIcon htmlColor='orange' className="addPhoto" />
+              <InsertPhotoIcon htmlColor='green' className="addPhoto" />
               <span className="addPostOptionText">Add Photo/Video</span>
             </div>
             <div className="addPostOption">
