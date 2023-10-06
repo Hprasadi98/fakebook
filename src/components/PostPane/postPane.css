@@ -1,3 +1,13 @@
 .postPaneBox{
     flex: 5;
+    overflow-y: scroll;
+}
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-track{
+    background-color: aliceblue;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(151, 152, 154);
 }
