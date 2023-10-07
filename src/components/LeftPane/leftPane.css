@@ -1,6 +1,6 @@
 .leftPaneBox{
+    height: 100%;
     flex: 2;
-    overflow-y: scroll;
     font-family: sans-serif;
 }
 ::-webkit-scrollbar{
@@ -14,6 +14,8 @@
 }
 
 .leftPaneContainer{
+    height: 50%;
+    overflow-y: scroll;
     padding: 20px;
 }
 .leftPaneMenu{
