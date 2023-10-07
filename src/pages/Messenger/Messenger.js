@@ -2,6 +2,7 @@ import React from 'react'
 import './messenger.css'
 import Navbar from '../../components/Navigation/Navbar'
 import Conversation from '../../components/Conversations/Conversation'
+import Message from '../../components/Message/Message'
 
 export default function Messenger() {
   return (
@@ -20,7 +21,28 @@ export default function Messenger() {
         </div>
         <div className="chatBox">
             <div className="chatBoxWrapper">
-                box
+                <div className="chatBoxTop">
+                    <Message/>
+                    <Message own={true}/>
+                    <Message own={true}/>
+                    <Message/>
+                    <Message/>
+                    <Message/>
+                    <Message/>
+                    <Message own={true}/>
+                    <Message own={true}/>
+                    <Message own={true}/>
+                    <Message own={true}/>
+                    <Message own={true}/>
+                    <Message own={true}/>
+                    <Message/>
+                    <Message/>
+                    <Message/>
+                </div>
+                <div className="chatBoxBottom">
+                    <textarea placeholder='write something...' className="chatMessageInput"></textarea>
+                    <button className="chatSubmitButton">Send</button>
+                </div>
             </div>
         </div>
         <div className="chatOnline">
