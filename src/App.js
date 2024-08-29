@@ -1,13 +1,13 @@
-//import Home from "./pages/Home/Home";
-import Messenger from "./pages/Messenger/Messenger";
+import Home from "./pages/Home/Home";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
-  return (
-    <div className="App">
-      
-      <Messenger/>
-
-    </div>
+    return (
+    <>
+    <Routes>
+      <Route exact path='/' element={<Home/>}></Route>
+    </Routes>
+    </>
   );
 }
 
