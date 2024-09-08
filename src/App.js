@@ -6,6 +6,7 @@ function App() {
     <>
     <Routes>
       <Route exact path='/' element={<Home/>}></Route>
+      <Route exact path='/messenger' element={<Home/>}></Route>
     </Routes>
     </>
   );
