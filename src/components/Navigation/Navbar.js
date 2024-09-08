@@ -4,11 +4,14 @@ import PersonIcon from '@mui/icons-material/Person';
 import MessageIcon from '@mui/icons-material/Message';
 import SettingsIcon from '@mui/icons-material/Settings';
 import './navbar.css'
+import { useNavigate } from 'react-router-dom';
 
 export default function Navbar() {
+    const navigate = useNavigate();
+
   return (
     <div className="navBarBox">
-        <div className="navBarLeft">
+        <div className="navBarLeft" onClick={()=>navigate('/')}>
             <span className="logo">fakebook</span>
         </div>
         <div className="navBarCenter">
@@ -27,7 +30,7 @@ export default function Navbar() {
                     <PersonIcon/>
                     <span className="iconTag">3</span>
                 </div>
-                <div className="navBarIcon">
+                <div className="navBarIcon" onClick={()=>navigate('/messenger')}>
                     <MessageIcon/>
                     <span className="iconTag">5</span>
                 </div>
